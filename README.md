@@ -1,4 +1,4 @@
-jQuery Essential Training
+#jQuery Essential Training
 ## by [Tertiary Infotech Pte. Ltd](https://www.tertiarycourses.com.sg/)
 
 These are the exercise files used for [jQuery Essential Training](https://www.tertiarycourses.com.sg/jquery-essential-training-in-singapore.html) course. 
