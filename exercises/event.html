@@ -1,0 +1,33 @@
+<style>
+    #example {
+    border: 1px solid gray;
+    background-color: #b3c8d0;
+    font-size:14pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    min-height: 200px;
+    }
+</style>
+
+</head>
+<body>
+<h1>My homepage</h1>
+<p>Thank you for visiting my homepage</p>
+<div id="example">
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script>
+    $("document").ready(function() {
+        $("#example").on("mousemove", onMouseOver);
+
+    });
+    function onMouseOver(evt) {
+        $("#example").text(evt.type + ": " + evt.pageX + ", " + evt.pageY
+                           );
+    }
+
+</script>
+</body>
+</html>

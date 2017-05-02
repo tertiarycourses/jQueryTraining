@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Stay Classy</title>
+	<style>
+	
+		#boxes li {
+			display: block;
+			float: left;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			background: red;
+			color: white;
+			margin: 0 1em 1em 0;
+			
+		}
+		
+		#boxes span {
+			display: block;
+			padding-top: 40%;
+		}
+		
+		#boxes li.selected {
+			background: yellow;
+			color: black;
+		}
+		
+	</style>
+</head>
+<body>
+
+<ul id="boxes">
+	<li><span>1</span></li>
+	<li><span>2</span></li>
+	<li><span>3</span></li>
+	<li class="selected"><span>4</span></li>
+</ul>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	$('#boxes').find('li:nth-child(2)').toggleClass('selected');
+	
+	$('#boxes').find('li:nth-child(4)').toogleClass('selected');
+	
+});
+</script>
+</body>
+</html>

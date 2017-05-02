@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    #testDiv {
+        position:relative;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        padding: 20px;
+        background: #b3c8d0;
+        border: 1px solid black;
+        font-size: 16pt;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h1>My Homepage</h1>
+<p>Thank you for visitng my homepage</p>
+
+<button id="go">Go</button>
+
+<div id="testDiv"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script>
+    $("document").ready(function() {
+        $("#go").click(function() {
+                $("#testDiv").animate({width: 400}, 300)
+                .animate({height: 300}, 400)
+                .animate({left: 200}, 500)
+                .animate({right: 100}, 500)
+                .animate({top: "+=100", borderWidth: 10}, "slow")
+                .animate({bottom: "-=200", borderWidth: 30}, "slow")
+            });
+    });
+</script>
+
+</body>
+</html>
